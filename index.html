@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ezequiel Arevalo">
+    <meta name="keywords" content="HTML, CSS, JavaScript, blackjack, game">
+    <meta name="description" content="Juego de blackjack nativo">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Blackjack">
+    <meta name="application-name" content="Blackjack">
+    <meta name="msapplication-TileColor" content="#202020">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>blackjack - game</title>
+</head>
+<body>
+    <div class="container">
+        <header class="titulo">
+            <h1>Blackjack</h1>
+        </header>
+    
+        <main>
+            <div class="player-container">
+                <h2>Jugador 1 - <small>0</small></h2>
+                <div class="cartas">
+                    <!-- Imagenes de las cartas del jugador -->
+                </div>
+            </div>
+            
+            <div class="player-container">
+                <h2>Crupier - <small>0</small></h2>
+                <div class="cartas">
+                    <!-- Imagenes de las cartas del jugador -->
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <button id="btnJugar">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+                <span>Jugar de Nuevo</span>
+            </button>
+            <button id="btnPedir" disabled="disabled">
+                <i class="fa-solid fa-plus">1</i>
+                <span>Pedir Mas</span>
+            </button>
+            <button id="btnDetener" disabled="disabled">
+                <i class="fa-solid fa-hand"></i>
+                <span>Detener</span>
+            </button>
+        </footer>
+    </div>
+
+    <script src="assets/js/shuffle.js"></script>
+    <script src="assets/js/juego-min.js"></script>
+    <script src="https://kit.fontawesome.com/65664918f2.js" crossorigin="anonymous"></script>
+</body>
+</html>

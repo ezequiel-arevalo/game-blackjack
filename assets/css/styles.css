@@ -1,0 +1,168 @@
+/* Fuente Custom */
+@font-face {
+    font-family: 'LilitaOne';
+    src: url('../fonts/LilitaOne-Regular.ttf') format('truetype');
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+body
+{
+    background-color: #202020;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    height: 100vh;
+    margin: 0px auto;
+}
+
+header
+{
+    background-color: #202020;
+    margin: 10px auto;
+}
+
+header > h1
+{
+    text-align: center;
+    color: white;
+}
+
+main
+{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: #2F4F30;
+    border: 10px solid saddlebrown;
+    border-radius: 15px;
+}
+
+
+.player-container > h2
+{
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px 0px;
+}
+
+.player-container
+{
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+.cartas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta{
+    width: 120px;
+}
+
+footer
+{
+    width: 90%;
+    height: 60px;
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#btnJugar,
+#btnPedir,
+#btnDetener{
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: all 300ms ease-in-out;
+}
+
+@media (width <= 560px) {
+    footer
+    {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #btnJugar,
+    #btnPedir,
+    #btnDetener{
+        width: 90%;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .carta{
+        width: 60px;
+    }
+}
+
+#btnJugar
+{
+    background-color: #1acd81;
+}
+
+#btnJugar:hover
+{
+    background-color: #0fa968;
+}
+
+#btnJugar:active
+{
+    background-color: #108554;
+}
+
+#btnPedir
+{
+    background-color: #839dd1;
+}
+
+#btnPedir:hover
+{
+    background-color: #6a7fc1;
+}
+
+#btnPedir:active
+{
+    background-color: #6374ae;
+}
+
+#btnDetener
+{
+    background-color: #d75c77;
+}
+
+#btnDetener:hover
+{
+    background-color: #c13d60;
+}
+
+#btnDetener:active
+{
+    background-color: #a22e4f;
+}
